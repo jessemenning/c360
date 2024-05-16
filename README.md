@@ -1,10 +1,13 @@
-# Github Workflow configuration for Spring Cloud Stream with Asyncapi 
-This repo will have the github workflow needed to plan, provision, and promote a Spring Cloud Stream application using Event Portal, Event Broker, and AsyncaPI 
+# Order Details Service
 
-## Things to note
-- This workflow assumes an asyncapi.yml file in the root of the directory.
-- Make sure github actions is enabled in your repo
-  - Settings --> Actions --> General --> Allow all actions and reusable workflows
-  - Settings --> Actions --> General --> Workflow permissions --> Enable read/write
-- Confiure the secrets in your repo as per the [workflow files](.github/workflows)
-- Edit this readme to match your project description
+## Version 1.1.1
+
+ This service validates the details of each order, checking business rules such as:
+ *  Is the quantity positive?
+ * Is there a customerId?
+[GitHub source code](https://github.com/confluentinc/solace-streams-examples/blob/5.0.0-post/src/main/java/io/confluent/examples/streams/microservices/OrderDetailsService.java)
+
+
+
+
+
